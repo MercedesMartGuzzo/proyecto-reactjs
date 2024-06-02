@@ -1,0 +1,11 @@
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    gap: .2rem;
+    color: black;
+}
