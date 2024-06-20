@@ -13,4 +13,10 @@ a{
   text-decoration: none;
   color: black;
 }
-
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+img{
+  max-width: 100%;
+}

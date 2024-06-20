@@ -1,22 +1,24 @@
 import "./Navbar.css";
 import Cartwidget from "../../common/cartWidget/CartWidget.jsx";
-import { AppBar, Box} from "@mui/material";
+import { AppBar, Box } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 
 export const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar sx={{ backgroundColor: "peru", position: "static"}}>
+      <AppBar sx={{ backgroundColor: "peru", position: "static" }}>
 
         <ul className="lista">
           <li>
-            <h2 className="logo">VIOLIN SHOP</h2>
+            <h2 className="logo">TIENDA SHHOP</h2>
           </li>
-          <li><a href="">Intrumentos</a></li>
-          <li><a href="">Cuerdas</a></li>
-          <li><a href="">Accesorios</a></li>
-          <li><a href="">Estuches</a></li>
-         <li> <Cartwidget/></li>
+          <NavLink to="/">Inicio</NavLink>
+          <NavLink to="/products/women's clothing">Mujer</NavLink>
+          <NavLink to="/products/jewelery">Accesorios</NavLink>
+          <NavLink to="/products/men's clothing">Hombre</NavLink>
+          <NavLink to="/products/electronics">Tecnología</NavLink>
+          <li> <Cartwidget /></li>
         </ul>
       </AppBar>
     </Box>
