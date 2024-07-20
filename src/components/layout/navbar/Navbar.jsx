@@ -10,9 +10,7 @@ export const Navbar = () => {
       <AppBar sx={{ backgroundColor: "peru", position: "static" }}>
 
         <ul className="lista">
-          <li>
-            <h2 className="logo">TIENDA SHHOP</h2>
-          </li>
+          <NavLink to="/"> <h2 className="logo">TIENDA SHHOP </h2></NavLink>
           <NavLink to="/">Inicio</NavLink>
           <NavLink to="/products/women's clothing">Mujer</NavLink>
           <NavLink to="/products/jewelery">Accesorios</NavLink>

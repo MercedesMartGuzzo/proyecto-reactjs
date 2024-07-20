@@ -1,58 +1,58 @@
-.contenedor-card {
+ .contenedor-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
+    border: 1px solid peru;
     border-radius: 5px;
     transition: box-shadow 0.3s;
-    height: 100%; 
+    padding: 1rem;
+    margin-top:1rem;
+    width: 200px;
+    
+     
 }
-
 .contenedor-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+} 
 
-.card-producto {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-    }
 
-.card-info {
+
+ .card-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    flex-grow: 1;
     width: 100%;
     padding: 10px;
-}
+    
+}   
 
 .card-title, .card-description {
-    margin: 10px 0;
+    margin-top: .5rem;
     text-align: center;
+    font-weight: 300;
 }
 
 .card-price {
-    display: block;
-    margin-top: 10px;
+  
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 300;
     text-align: center;
 }
 
-.card-button {
-    background-color: peru;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-    align-self: stretch;
-    text-align: center;
+
+
+.card-button{
+   background-color: peru;
+   margin-top: 1rem;
+   color: black;
+   padding: .5rem;
+   border: 0;
+   border-radius: .3rem;
+}
+.foto-item{
+   
+    max-width:100%;
 }
