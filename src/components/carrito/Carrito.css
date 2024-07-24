@@ -1,0 +1,63 @@
+.items-carrito{
+    color: peru;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid peru;
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+    justify-content: center;
+    align-items: center;
+   
+}
+.eliminar{
+    border: 0;
+    background-color: peru;
+    width: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    color: peru;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.precio-total{
+    display: flex;
+    flex-direction: column;
+    color:peru;
+    justify-content: center;
+    align-items: center;
+    gap:.5rem;
+  
+}
+.btn-carrito{
+    width: 30px;
+    margin-right:1rem;
+   color: black;
+    padding: 5px;
+}
+.btn-carrito{
+    width: 30px;
+    margin-right:1rem;
+   color: black;
+    padding: 5px;
+}
+.agregar-btn{
+    width: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    background-color: peru;
+    color: black;
+    margin-left: 1rem;
+}
+.agregar-btn:hover{
+    color: peru;
+    background-color: white;
+    border: 1px solid peru;
+}

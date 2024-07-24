@@ -1,21 +1,39 @@
-import { NavLink } from "react-router-dom";
-import "./Item.css"
-
+import React, { useContext, useState, useCallback } from 'react';
+import ItemCount from '../../../itemCount/ItemCount.jsx';
 import "./Item.css";
+import { Context } from '../../../../context/Context.jsx';
 
 function Item({ item }) {
+    const { Agregar } = useContext(Context);
+    const [cantidad, setCantidad] = useState(1);
+
+    const restaContador = useCallback(() => {
+        setCantidad(prevCantidad => (prevCantidad > 1 ? prevCantidad - 1 : 1));
+    }, []);
+
+    const sumaContador = useCallback(() => {
+        setCantidad(prevCantidad => prevCantidad + 1);
+    }, []);
+
+    const handleAgregar = () => {
+        Agregar(item, cantidad);
+    };
+
     return (
         <article className="contenedor-card">
-          
-                <img className= "foto-item" src={item.image} alt={item.title} />
-                
-                <div className="card-info">
-                    <p className="card-title">{item.title}</p>
-                    <span className="card-price">${item.price}</span>
-                    <p className="card-description">{item.description}</p>
-                   { <NavLink to="/" ><button className="card-button">A inicio</button></ NavLink>}
+            <img className="foto-item" src={item.image} alt={item.title} />
+            <div className="card-info">
+                <p className="card-title">{item.title}</p>
+                <span className="card-price">${item.price}</span>
+                <p className="card-description">{item.description}</p>
             </div>
-  </article>
+            <ItemCount
+                cantidad={cantidad}
+                restaContador={restaContador}
+                sumaContador={sumaContador}
+                onAgregar={handleAgregar}
+            />
+        </article>
     );
 }
 

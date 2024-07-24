@@ -1,9 +1,9 @@
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import {Badge} from "@mui/material"
+/* import {Badge} from "@mui/material" */
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Context } from '../../../context/Context';
-
+import "./CartWidget.css"
 
 
 const CartWidget = () => {
@@ -12,15 +12,13 @@ const CartWidget = () => {
   
 
   return (
-    <div>
+    <div >
       <Link to="/carrito">  
-      <Badge badgeContent={0} color="primary" showZero={true}> <AddShoppingCartIcon/></Badge>
-      <h5>Cantidad: {qty}</h5>
-
+      <div  className='cartWidget'>
+   <AddShoppingCartIcon/>
+      <span> {qty}</span></div>
       </Link> 
-
-    </div>
-
+      </div>
   )
 }
 

@@ -56,3 +56,34 @@
    
     max-width:100%;
 }
+.btn{
+display: flex;
+justify-content:center;
+gap: .3rem;
+
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn1{
+    background-color: peru;
+    border: 0;
+    width: 25px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-agregar{
+    background-color: peru;
+   margin-top: 1rem;
+   color: black;
+   padding: .5rem;
+   border: 0;
+   border-radius: .3rem;
+   justify-content: center;
+   align-items: center;
+}
