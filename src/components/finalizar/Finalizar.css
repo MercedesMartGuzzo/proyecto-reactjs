@@ -1,0 +1,54 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    width: 100%;
+}
+.wrapp-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+   
+  
+}
+.wrapp-formulario h2{
+    color:peru;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+.submit{
+    width: 45px;
+    border: 0;
+    background-color: peru;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.btn-form{
+    width: 80px;
+    border: 0;
+    background-color: peru;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 1rem;
+}
+.btn-form:hover, .submit:hover{
+    color: peru;
+    background-color: white;
+    border: 1px solid peru;
+}
+.saludo{
+    color:peru;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
