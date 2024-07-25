@@ -58,18 +58,20 @@
         {items.map(item => (
           <Link key={item.id} to={`/products/detail/${item.id}`} className="item-link">
             <article className="contenedor-card">
+              <div className="wrapp-foto">
               <img className="foto-item" src={item.image} alt={item.title} />
+              </div>
             <div className="card-info" >
-              <button className="card-button">Ver detalles</button>
+            <p className="card-title">{item.title}</p>
               <span className="card-price">${item.price}</span>
-              <p className="card-title">{item.title}</p>
-             </div> 
+              <button className="card-button">Ver detalles</button>
+              </div> 
             </article>
           </Link>
         ))}
       </div>
     </div>
-  );
+  ); 
 }
 
 export default ItemListContainer;

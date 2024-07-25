@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ItemDetailContainer from "./components/common/pages/itemListContainer/ItemDetailContainer.jsx";
 import { CartProvider } from "./context/Context.jsx"
 import { Carrito } from "./components/carrito/Carrito.jsx"
- import Finalizar from "./components/finalizar/Finalizar.jsx"
- 
+import Finalizar from "./components/finalizar/Finalizar.jsx"
+
 
 function App() {
 
@@ -16,11 +16,10 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<ItemListContainer />} />
-            <Route path='/products/:category' element={<ItemListContainer />} />
+              <Route path='/products/:category' element={<ItemListContainer />} />
             <Route path='/products/detail/:id' element={<ItemDetailContainer />} />
             <Route path="/carrito" element={<Carrito />} />
-           <Route path="/checkout" element={<Finalizar />}/>
-          
+            <Route path="/checkout" element={<Finalizar />} />
           </Routes>
         </BrowserRouter>
       </CartProvider>

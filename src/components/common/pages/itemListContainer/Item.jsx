@@ -21,9 +21,11 @@ function Item({ item }) {
 
     return (
         <article className="contenedor-card">
-            <img className="foto-item" src={item.image} alt={item.title} />
+            <div className="wrapp-foto">
+                <img className="foto-item" src={item.image} alt={item.title} />
+            </div>
             <div className="card-info">
-                <p className="card-title">{item.title}</p>
+                <p className="card-title title1">{item.title}</p>
                 <span className="card-price">${item.price}</span>
                 <p className="card-description">{item.description}</p>
             </div>
