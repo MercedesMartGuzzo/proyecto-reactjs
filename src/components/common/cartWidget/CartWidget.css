@@ -1,6 +1,23 @@
-.cartWidget{
-    color: rgb(30, 88, 135);
+.cartLink {
+    text-decoration: none;
     display: flex;
-    justify-content: center;
     align-items: center;
+
+}
+
+.cartWidget {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    ;
+    gap: 0.3rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color:peru;
+}
+
+.cartWidget span {
+    font-weight: bold;
+    color:peru
+
 }

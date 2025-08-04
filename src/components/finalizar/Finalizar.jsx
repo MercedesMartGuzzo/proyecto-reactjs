@@ -39,8 +39,8 @@ const Finalizar = () => {
   }
 
   return (
-    <div className="wrapp-formulario">
-      <h2 className='form-titulo'>Datos de envio </h2>
+    <div className="wrapp-formulario container">
+      <h2 className='form-titulo'>DATOS DE ENVÍOS </h2>
       <form className="formulario" onSubmit={handleSubmit(enviar)}>
 
         <input type="text" placeholder='Ingresa tu nombre' {...register("nombre")} />
@@ -49,9 +49,9 @@ const Finalizar = () => {
         <input type="text" placeholder='Ingresa tu direccion'{...register("direccion")} />
         <input type="text" placeholder='Ingresa una descrpcion (opcional)'{...register("descripcion")} />
         <input type="text" placeholder='Pedido especial'{...register("pedidoespecial")} />
-        <button className="submit" type='submit'> Pedir </button>
+        <button className="submit" type='submit'> PEDIR </button>
       </form>
-      <Link to="/" className= "btn-form">Ir al inicio</Link>
+      <Link to="/" className= "btn-form">IR AL INICIO</Link>
     </div>
   )
 }

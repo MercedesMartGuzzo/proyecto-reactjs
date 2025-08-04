@@ -1,54 +1,113 @@
-.formulario{
+.wrapp-formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     align-items: center;
     margin-top: 1rem;
     gap: 1rem;
-    width: 100%;
+    width: 400px;
+    margin-bottom: 2rem;
+    background-color: #7e3333;
+    border-radius: 10px;
+    padding-top: 2rem;
 }
-.wrapp-formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-   
-  
-}
-.wrapp-formulario h2{
-    color:peru;
-    margin-top: 2rem;
-    font-size: 1.4rem;
-}
-.submit{
-    width: 45px;
-    border: 0;
-    background-color: peru;
-    padding: 5px;
+
+.formulario input {
+    width: 90%;
+    padding: 0.5rem;
     border-radius: 5px;
-    margin-bottom: 1rem;
+    border: 1px solid peru;
+    font-size: 1rem;
+    color: #333;
 }
-.btn-form{
+
+
+
+.wrapp-formulario h2 {
+    color: peru;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.submit {
     width: 80px;
     border: 0;
     background-color: peru;
     padding: 5px;
     border-radius: 5px;
-    color: black;
     margin-bottom: 1rem;
-}
-.btn-form:hover, .submit:hover{
-    color: peru;
-    background-color: white;
+    color: #f4f4f4;
     border: 1px solid peru;
+    font-size: 1.1rem;
 }
-.saludo{
-    color:peru;
+
+.btn-form {
+    width: 150px;
+    border: 0;
+    background-color: peru;
+    padding: 5px;
+    border-radius: 5px;
+    color: #f4f4f4;
+    margin-bottom: 1rem;
+    border: 1px solid peru;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.btn-form:hover,.submit:hover
+ {
+    color: peru;
+    background-color: #f4f4f4;
+    border: 1px solid peru;
+    cursor: pointer;
+}
+.submit:hover{
+    border: 1px solid #f4f4f4;
+}
+
+.saludo {
+    color: peru;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
     gap: 1rem;
+    min-height: 100vh;
+}
+
+
+
+@media (max-width: 480px) {
+    .wrapp-formulario {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .formulario {
+        width: 90%;
+    }
+    
+    .formulario input {
+        width: 90%;
+    }
+    
+    .btn-form, .submit {
+        width: 100px;
+    }
+    .saludo{
+        font-size: 1rem;
+       
+    }
 }

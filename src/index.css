@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
   margin:0;
   padding:0;
   box-sizing: border-box
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 ul,
@@ -11,12 +23,17 @@ ol {
 
 a{
   text-decoration: none;
-  color:  rgb(30, 88, 135);
+
 }
 .container{
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
+}
+h1,h2{
+  font-family: 'Roboto Condensed', sans-serif;
+color: peru;
 }
 img{
   max-width: 100%;
 }
+

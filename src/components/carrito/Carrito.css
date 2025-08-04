@@ -1,16 +1,27 @@
-.items-carrito{
+.carrito {
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.carrito h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.items-carrito {
     color: peru;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid peru;
+    margin: 1rem;
+    border: 1px solid peru;
     display: flex;
     flex-direction: column;
-    gap:.5rem;
-    justify-content: center;
+    gap: .5rem;
+    justify-content: start;
     align-items: center;
-   
+    padding: 1rem;
+    border-radius: 5px;
 }
-.eliminar{
+
+.eliminar {
     border: 0;
     background-color: peru;
     width: 25px;
@@ -19,39 +30,60 @@
     margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
+    color: #f4f4f4;
+    cursor: pointer;
+     border: 1px solid peru;
 }
-.titulo{
+
+.eliminar:hover {
+    color: peru;
+    background-color: white;
+}
+
+.titulo {
     color: peru;
     margin-bottom: 1rem;
     margin-top: 1rem;
     margin-left: 1rem;
-}
-.precio-total{
-    display: flex;
-    flex-direction: column;
-    color:peru;
-    justify-content: center;
-    align-items: center;
-    gap:.5rem;
-  
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 
-.btn-carrito{
-    width: 30px;
-    margin-right:1rem;
-   color: black;
-    padding: 5px;
+.precio-total {
+    display: flex;
+    flex-direction: column;
+    color: peru;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+
 }
-.agregar-btn{
+
+.btn1.btn-carrito {
+    width: 30px;
+    margin-right: 1rem;
+    color: white;
+    padding: 5px;
+    border: 1px solid peru;
+
+}
+
+.agregar-btn {
     width: 20px;
     padding: 8px;
     border-radius: 5px;
     margin-top: 1rem;
     background-color: peru;
-    color: black;
+    color: white;
     margin-left: 1rem;
 }
-.agregar-btn:hover,.btn-carrito:hover{
+
+.agregar-btn:hover,
+.btn-carrito:hover {
     color: peru;
     background-color: white;
     border: 1px solid peru;

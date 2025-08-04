@@ -1,9 +1,9 @@
-
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { collection, addDoc } from "firebase/firestore";
-import { db}  from "../../../../Firebase/config"; 
+import { db } from "../../../../Firebase/config"; 
 import Item from './Item';
+import './ItemDetailContainer.css';
 
 function ItemDetailContainer() {
     const [item, setItem] = useState(null);
@@ -19,7 +19,6 @@ function ItemDetailContainer() {
             })
             .then(data => {
                 setItem(data);
-                // Upload the product to Firestore
                 uploadProductToFirestore(data); 
             })
             .catch(error => {
@@ -27,7 +26,6 @@ function ItemDetailContainer() {
             });
     }, [id]);
 
-    // Function to upload the product to Firestore
     const uploadProductToFirestore = async (product) => {
         try {
             await addDoc(collection(db, "products"), {
@@ -44,8 +42,15 @@ function ItemDetailContainer() {
     };
 
     return (
-        <div>
-            {item ? <Item item={item} /> : <p>Cargando...</p>}
+        <div className="item-detail-container">
+            {item ? (
+                <>
+                    <Item item={item} />
+                    <Link to="/" className="btn-volver-inicio">Volver al inicio</Link>
+                </>
+            ) : (
+                <p>Cargando...</p>
+            )}
         </div>
     );
 }
